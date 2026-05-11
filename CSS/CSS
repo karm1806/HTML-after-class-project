@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <title style="color: red;">This is a CSS class.</title>
+<p style="color: brown;">This is about how to change color of the text </p>
+<p style="color: green;">This is another paragraph with a different color.
+    <h1 style="color: orange;">Bye</h1>
+</p>
+    </body>
+</html>
