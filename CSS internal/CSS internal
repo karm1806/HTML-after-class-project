@@ -1,0 +1,23 @@
+<html>
+<body>
+    <h1>Hi</h1>
+    <style>
+        .green{
+            color: green;
+            font-size: xx-large;
+        }
+        .red{
+            color: red;
+            font-size: xx-small;
+        }
+    </style>
+    <div class="green">
+    <p>My name is Karm.</p>
+    <p>I am 10 years old.</p>
+    </div>
+    <div class="red">
+        <p>I am studing in Grade 6.</p>
+        <p>I like to play cricket.</p>
+    </div>
+</body>
+</html>
