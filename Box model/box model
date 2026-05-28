@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            .label{
+                background-color: gray;
+                color:cyan;
+                width: 200px;
+                border: 15px solid green;
+                padding: 50px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="label">
+            <h1>This is about box model</h1>
+            <p>In this section, we will learn about padding, border, margin and other things.</p>
+        </div>
+        </body>
