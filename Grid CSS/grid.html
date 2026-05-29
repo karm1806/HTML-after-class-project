@@ -1,18 +1,16 @@
 <html>
     <head>
-        <h1>This is the grid class.</h1>
-        <p>This is of about grid. In the grid it have column, row, grid area, cell etc.</p>
         <style>
-            .grid-item1 {grid area:header;}
-            .grid-item2 {grid area:menu;}
-            .grid-item3 {grid area:main;}
-            .grid-item4 {grid area:footer;}
+            .grid-item1 {grid-area:header;}
+            .grid-item2 {grid-area:menu;}
+            .grid-item3 {grid-area:main;}
+            .grid-item4 {grid-area:footer;}
             .grid-container {
                 display: grid;
                 grid-template-columns: auto auto auto auto auto;
                 grid-template-areas:
                 'header header header header header'
-                'main main main main main'
+                'menu main main main main'
                 'menu footer footer footer footer';
                 background-color: mediumseagreen;
                 padding: 10px;
@@ -25,4 +23,12 @@
             }
         </style>
     </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item1">Header</div>
+            <div class="grid-item2">Menu</div>
+            <div class="grid-item3">Main</div>
+            <div class="grid-item4">Footer</div>
+        </div>
+    </body>
 </html>
