@@ -3,22 +3,27 @@
         <title>Aircrafts</title>
             <h1>Aircrafts</h1>
         <style>
-            .grid-item1 {grid-area:leftbar;}
-            .grid-item2 {grid-area:rightsidebar;}
+            .grid-item1 {grid-area:header;}
+            .grid-item2 {grid-area:navbar;}
+            .grid-item3 {grid-area:footer;}
+            .grid-item4 {grid-area:sidebar;}
             .grid-container {
                 display: grid;
                 grid-template-columns: auto auto auto auto auto;
                 grid-template-areas:
-                'leftbar leftbar leftbar leftbar rightsidebar'
-                'leftbar leftbar leftbar leftbar rightsidebar';
-                background-color:deepskyblue;
+                'header header header header header'
+                'navbar navbar navbar navbar sidebar'
+                'navbar navbar navbar navbar sidebar'
+                'footer footer footer footer footer';
+                background-color:mediumseagreen;
                 padding:100px;
+                gap:5px;
             }
             .grid-container div{
-                background-color: #f68e77;
+                background-color:#f68e77;
                 text-align: center;
                 padding: 20px;
-                border: 3px solid deepskyblue;
+                border: 3px solid lightskyblue;
             }
         .flex-container{
             display:flex;
@@ -30,7 +35,7 @@
             margin-top: 80px;
         }
         .flex-container div{
-            width: 1500px;
+            width: 760px;
             background-color:wheat;
             padding: 5px;
             margin: 5px;
@@ -92,10 +97,38 @@
         }
         </style>
     </head>
-        <body>
+    <body>
             <div class="grid-container">
-                <div class="grid-item1">leftbar</div>
-                <div class="grid-item2">rightsidebar</div>
+                <div class="grid-item1">Header</div>
+                <div class="grid-item2">Navbar</div>
+                <div class="grid-item3">Footer</div>
+                <div class="grid-item4">
+            <aside>
+                    <h2>Aircrafts</h2>
+                    <div>
+                        <h3>Airbus A-350</h3>
+                        <ul>
+                            <li>A350-900</li>
+                            <li>A350-1000</li>
+                            <li>A350F</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Airbus A-380</h3>
+                        <ul>
+                            <li>A380-800</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Boeing 787</h3>
+                        <ul>
+                            <li>Boeing 787-8</li>
+                            <li>Boeing 787-9</li>
+                            <li>Boeing 787-10</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
                 </div>
             <div class="flex-container">
                 <div>Airbus A-350</div>
