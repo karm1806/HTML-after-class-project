@@ -99,6 +99,7 @@
     </head>
     <body>
             <div class="grid-container">
+                <h2>Structure of the page</h2>
                 <div class="grid-item1">Header</div>
                 <div class="grid-item2">Navbar</div>
                 <div class="grid-item3">Footer</div>
