@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>My hobby</title>
+        <style>
+            button{
+                display:block;
+                margin: 5px;
+            }
+            body.dark{
+                color:white;
+                background-color:black;
+            }
+            body.light{
+                color:black;
+                background-color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Hobby</h1>
+        <p>My hobby is given below:</p>
+        <button onclick="myhobby()">My hobbies</button>
+        <h3 id="hobby"></h3>
+        <script>
+            function myhobby() {
+                document.body.className="dark";
+                document.getElementById("hobby").innerHTML="My hobbies are taekwondo, coding, and other activities.";
+            }
+            function dismiss() {
+                document.body.className="light";
+                document.getElementById("hobby").innerHTML="";
+            }
+        </script>
+        <button onclick="dismiss()">Dismiss</button>
+    </body>
+</html>
