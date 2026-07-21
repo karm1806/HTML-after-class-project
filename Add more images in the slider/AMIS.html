@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Add more images in the slider</title>
+    </head>
+    <body>
+        <section>
+            <img class="mySlides" src="images.png" style="height: 500px;">
+            <img class="mySlides" src="Surat_International_Airport.jpg" style="height: 500px;">\
+            <img class="mySlides" src="images1.png" style="height: 500px;">
+            <img class="mySlides" src="images (1).png" style="height: 500px;">
+            <img class="mySlides" src="image2.png" style="height: 500px;">
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel,2000);
+            }
+        </script>
+    </body>
+</html>
